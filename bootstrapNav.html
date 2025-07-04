@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+    <!-- Viewport for Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the Webpage -->
+    <title>My Website Title</title>
+    <!-- Description for SEO -->
+    <meta name="description" content="This is a sample website description used for SEO purposes.">
+    <!-- Keywords for SEO -->
+    <meta name="keywords" content="HTML, CSS, JavaScript, Web Design">
+    <!-- Author Info -->
+    <meta name="author" content=>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Link to External CSS File -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <section>
+        <h1 style="text-align: center; text-decoration: underline;">
+            Toggleable Tabs
+        </h1>
+        <hr>
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item"><a href="#home" class="nav-link active" data-bs-toggle="tab">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link" data-bs-toggle="tab">About</a></li>
+            <li class="nav-item"><a href="#gallery" class="nav-link" data-bs-toggle="tab">Gallery</a></li>
+            <li class="nav-item"><a href="#service" class="nav-link" data-bs-toggle="tab">Services</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link" data-bs-toggle="tab">Contact Us</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="container tab-pane active">
+                <h3>Home Page</h3>
+                <p>Its a home page</p>
+            </div>
+            <div  id="about" class="container tab-pane fade">
+                <h3>About Page</h3>
+                <p>Its a about page</p>
+            </div>
+            <div class="container tab-pane fade" id="gallery">
+                <h3>Gallery Page</h3>
+                <p>here are some photos</p>
+            </div>
+            <div class="container tab-pane fade" id="service">
+                <h3>services page</h3>
+                <p>here are lots of services</p>
+            </div>
+            <div class="container tab-pane fade" id="contact">
+                <h3>conatct page</h3>
+                <p>contact the hr</p>
+            </div>
+        </div>
+
+
+        <hr>
+        <h1 style="text-align: center; text-decoration: underline;">
+           Toggleable / Dynamic Pills
+        </h1>
+        <hr>
+        <ul class="nav nav-pills" >
+            <li class="nav-item"><a href="#home" class="nav-link active" data-bs-toggle="pill">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link" data-bs-toggle="pill">About</a></li>
+            <li class="nav-item"><a href="#gallery" class="nav-link" data-bs-toggle="pill">Gallery</a></li>
+            <li class="nav-item"><a href="#service" class="nav-link" data-bs-toggle="pill">Services</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link" data-bs-toggle="pill">Contact Us</a></li>
+        </ul>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

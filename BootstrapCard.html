@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+    <!-- Viewport for Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the Webpage -->
+    <title>My Website Title</title>
+    <!-- Description for SEO -->
+    <meta name="description" content="This is a sample website description used for SEO purposes.">
+    <!-- Keywords for SEO -->
+    <meta name="keywords" content="HTML, CSS, JavaScript, Web Design">
+    <!-- Author Info -->
+    <meta name="author" content=>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Link to External CSS File -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        #basiccard:hover {
+            background-color: coral;
+            color: aliceblue;
+            cursor: pointer;
+        }
+
+        #colorCard:hover {
+            background-color: coral;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1 style="text-align: center; text-decoration: underline;">
+            Bootstrap Card
+        </h1>
+        <hr>
+        <h2 style="text-align: center; text-decoration: underline;">
+
+            Basic Card
+        </h2>
+
+        <div class="card m-5" id="basiccard">
+            <div class="card-body" style="text-align: center;">Jay Patel</div>
+        </div>
+
+        <hr>
+        <h2 style="text-align: center; text-decoration: underline;">
+            Contextual Card
+        </h2>
+
+        <div class="card m-4 bg-primary text-white" id="colorCard">
+            <div class="card-body" style="text-align: center;">Primary Card</div>
+        </div>
+        <div class="card m-4 bg-success text-white" id="colorCard">
+            <div class="card-body" style="text-align: center;">Success Card</div>
+        </div>
+        <div class="card m-4 bg-info text-dark" id="colorCard">
+            <div class="card-body" style="text-align: center;">Info Card</div>
+        </div>
+        <div class="card m-4 bg-warning text-dark" id="colorCard">
+            <div class="card-body" style="text-align: center;">Warning card</div>
+        </div>
+        <div class="card m-4 bg-danger text-white" id="colorCard">
+            <div class="card-body" style="text-align: center;">Danger
+                Card
+            </div>
+        </div>
+
+        <hr>
+        <h2 style="text-align: center; text-decoration: underline;">
+            Image Card
+        </h2>
+        <div class="container mt-3">
+            <p>Image at the top (card-img-top):</p>
+            <div class="card bg-secondary text-white" style="width: 400px; margin-bottom: 25px; padding: 0 auto;">
+                <img src="images/6.jpg" alt="Jay Patel" class="card-img-top" width="100%">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        Jay Patel
+                    </h4>
+                    <p class="card-text">
+                        Some sample text for card
+                    </p>
+                    <a href="" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <hr>
+            <p>Image at the Bottom (card-img-bottom):</p>
+            <div class="card bg-primary text-white" style="width: 400px; margin-bottom: 25px; padding: 0 auto;">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        Jay Patel
+                    </h4>
+                    <p class="card-text">
+                        Some Sample text for card
+                    </p>
+                    <a href="" class="btn btn-success text-white">See Profile</a>
+                </div>
+                <img src="images/6.jpg" alt="" class="card-img-bottom" width="100%">
+
+            </div>
+        </div>
+
+        <hr>
+        <h2 style="text-align: center; text-decoration: underline;">
+            Card Image Overlays
+        </h2>
+
+        <div class="container-mt-3">
+            <div class="card" style="width: 400px; margin-bottom: 25px;">
+                <img src="images/3.jpg" alt="" class="card-img-top">
+                <div class="card-img-overlay">
+                    <h4 class="card-title text-white">
+                        Bird Iamge
+                    </h4>
+                    <p class="card-text text-white">
+                        some text for card img overlays
+                    </p>
+                    <a href="" class="btn btn-primary">See Info</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

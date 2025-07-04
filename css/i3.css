@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.table h1 {
+    text-align: center;
+}
+
+#abc {
+    margin: 10px;
+    border-radius: 5px;
+    background-color: lightblue;
+
+}
+
+.nav-item a {
+    color: white;
+}
+
+.nav-item:hover {
+    color: black;
+
+}
+
+mark{
+    background-color: red;
+    color: white;
+}
+
+mark:hover{
+    background-color: blueviolet;
+    color: bisque;
+    cursor: pointer;
+}

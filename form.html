@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+    <!-- Viewport for Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the Webpage -->
+    <title>My Form</title>
+    <!-- Description for SEO -->
+    <meta name="description" content="This is a sample website description used for SEO purposes.">
+    <!-- Keywords for SEO -->
+    <meta name="keywords" content="HTML, CSS, JavaScript, Web Design">
+    <!-- Author Info -->
+    <meta name="author" content=>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Link to External CSS File -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        #abc {
+            /* position: sticky; */
+            margin: 5px;
+            background-color: rgba(46, 82, 241, 0.5);
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+            border-radius: 5px;
+        }
+
+        .navbar-brand {
+            color: white;
+        }
+
+        .nav-item a {
+            color: black;
+        }
+
+        .nav-item a:hover {
+            color: white;
+        }
+
+        .navbar-brand:hover {
+            color: black;
+        }
+        
+        .container1 {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: lightblue;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            /* margin-top: 30px; */
+            margin-bottom: 30px;
+
+
+        }
+
+
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        .form-item {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+
+        .form-item label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-item input,
+        .form-item select,
+        .form-item textarea {
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 10px;
+            font-size: 1em;
+
+        }
+
+
+        .gender-item {
+            display: flex;
+            gap: 15px;
+            margin-top: 5px;
+
+        }
+
+        select {
+
+            border: #b2eeac 2px solid;
+        }
+
+        select>option {
+            background-color: rgb(9, 21, 128);
+            border-radius: 5px;
+            color: white;
+        }
+
+
+        .gender-item label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        input[type="radio"] {
+            filter: hue-rotate(50deg);
+        }
+
+
+        .form-item .gender-item label {
+            font-weight: normal;
+        }
+
+        .form-action {
+            text-align: center;
+        }
+
+        .form-action button {
+            padding: 10px 20px;
+            background-color: rgb(6, 86, 110);
+            border-radius: 10px;
+            font-size: 1em;
+
+            margin-top: 5px;
+            color: white;
+
+        }
+
+        #reg:invalid #submit {
+            pointer-events: none;
+            cursor: not-allowed;
+            color: graytext;
+        }
+
+        .form-action button:hover {
+            background-color: green;
+            cursor: pointer;
+            color: aliceblue
+        }
+
+        @media (min-width:600px) {
+            .row {
+                display: flex;
+                gap: 20px;
+            }
+
+            .row .form-item {
+                flex: 1;
+            }
+        }
+
+
+        @media (max-width:600px) {
+            .container1 {
+                max-width: 350px;
+            }
+
+            .form-item label {
+                margin-bottom: 5px;
+                font-weight: bold;
+                font-size: small;
+            }
+        }
+
+        @media (min-width:300px) and (max-width:400px) {
+            .container1 {
+                max-width: 300px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg ronded-nav offset-lg-0 sticky-top" id="abc">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="\">Form</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto" id="item">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="\">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="\">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="\">Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-disabled="true">Description</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="\">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <section>
+            <div class="container1">
+                <h2>Responsive Form</h2>
+
+                <form action="" method="post" id="reg">
+                    <div class="row">
+                        <div class="form-item">
+                            <label for="fname">First Name</label>
+                            <input type="text" name="fname" id="fname" required placeholder="Enter Your First Name" />
+                        </div>
+                        <div class="form-item">
+                            <label for="fname">Last Name</label>
+                            <input type="text" name="lname" id="lname" required placeholder="Enter Your Last Name">
+                        </div>
+                    </div>
+
+
+                    <div class="form-item">
+                        <label for="">Gender</label>
+                        <div class="gender-item">
+                            <label><input type="radio" name="styles" id="outline" class="custom-radio" value="Male"
+                                    required />Male</label>
+                            <label><input type="radio" name="styles" id="outline" class="custom-radio" value="Female"
+                                    required />Female</label>
+                            <label><input type="radio" name="styles" id="outline" class="custom-radio" value="Other"
+                                    required />Other</label>
+                        </div>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="number">Number</label>
+                        <input type="tel" name="number" id="number" required  inputmode="numeric" pattern="\d*"/>
+                    </div>
+
+
+                    <div class="form-item">
+                        <label for="city">City</label>
+                        <select name="city" id="city">
+                            <option value="">---select city---</option>
+                            <option value="ahmedabad">Ahmedabad</option>
+                            <option value="surat">Surat</option>
+                            <option value="vadodara">Vadodara</option>
+                            <option value="rajkot">Rajkot</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-item">
+                        <label for="address">Address</label>
+                        <textarea name="address" id="address" rows="3" required></textarea>
+                    </div>
+
+
+                    <div class="form-item">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required />
+                    </div>
+
+                    <div class="form-item">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required maxlength="8" minlength="5" />
+                    </div>
+
+                    <div class="form-action">
+                        <button type="submit" id="submit">Submit</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+        <script defer src="js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>

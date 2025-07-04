@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.heading h1 {
+    text-align: center;
+    padding: 75px
+}
+
+.containermain {
+    position: relative;
+    justify-content: center;
+
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+
+
+.c1 {
+    position: relative;
+}
+
+.im1 {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.c1 .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #008CBA;
+}
+
+.c1:hover .overlay {
+    opacity: 1;
+}
+
+.c1 .text {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.c2 .im2{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.c2 .middle{
+    transition: .5s ease;
+    position: absolute; 
+    opacity: 0;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+
+.c2:hover .im2{
+    opacity: 0.3;
+}
+
+.c2:hover .middle{
+    opacity: 1;
+}
+
+.c2 .text{
+    background-color: #4CAF50;
+    color: rgb(95, 10, 10);
+    font-size: 16px;
+    padding: 16px 32px;
+}
+.c3{
+    position: relative;
+}
+.c3 .overlay
+{
+    position: absolute; 
+    right: 0;
+    left: 0;
+    background-color:#008CBA;
+    overflow: hidden; 
+   width: 100%;
+
+     bottom: 0; 
+    height: 0;
+  transition: .5s ease;z-index: 1;
+}
+
+.c3:hover .overlay{
+  
+    height: 100%;
+}
+
+.c3 .text{
+    white-space: nowrap;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+     transform: translate(-50%, -50%);
+    
+}
+
+.container .flip:hover{
+    transform: scaleX(-1);cursor: pointer;
+}
+
+.container img{
+    display: block; 
+    margin: auto;
+}
+
+.container1{
+     position: relative;
+    justify-content: center;
+
+    display: flex;
+
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    
+
+}
+
+
+#one:hover{
+filter: blur(2px);
+}
+
+#two:hover{
+    filter: brightness(50%);
+}
+
+#three:hover{
+    filter:contrast(150%)
+}
+
+#four:hover{
+    filter:drop-shadow(10px 10px 7px rgb(10, 85, 110))
+}
+
+#five:hover{
+    filter:grayscale(150)
+}
+
+#six:hover{
+    filter:hue-rotate(80deg)
+}
+
+#seven:hover{
+    filter: invert(75%);
+}
+
+#eight:hover{
+    filter:opacity(50%)
+}
+
+#nine:hover{
+    filter:saturate(200%)
+}
+
+#ten:hover{
+    filter: sepia(60%);
+}
